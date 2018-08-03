@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label>Hello World</Label>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="18">Test</Label>
+        <TextBlock Grid.Row="1" Grid.Column="0">Username</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+        <Button Grid.Row="2" Grid.Column="1">Login</Button>
     </Grid>
 </Window>
